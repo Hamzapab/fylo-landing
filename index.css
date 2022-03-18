@@ -17,25 +17,231 @@
 }
 body{
     font-family: var(--body-font);
+    font-size: 22px;
 }
 nav{
     padding: 20px 0px 20px 20px;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 80px;
     
+}
+::placeholder{
+    color: var(--Light-Gray);
 }
 .list{
     min-width: 300px;
     display: flex;
     justify-content: space-evenly;
 }
+p{
+    color: var(--Very-Dark-Blue);
+    opacity: .6;
+}
 /*--------------------------SEC 01 -------------*/
 .sec_1{
     text-align: center;
 }
+
 .illu_1 img{
     width: 500px;
+    margin-bottom: 50px;
 }
 .txt{
+    margin: 0 auto;
+    max-width: 900px;
     padding: 40px;
+}
+h1{  
+    font-family: var(--head-font);
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+.sec_1 p{   
+    margin-bottom: 40px;
+}
+.sumb{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+label{
+    display: block;
+}
+input{
+    padding-left:30px ;
+    width: 400px;
+    height: 60px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    opacity: 1;
+}
+button{
+    color: white;
+    font-size: 20px;
+    width: 400px;
+    height: 60px;
+    background-color: var(--Bright-Blue);
+    border-radius: 8px;
+}
+button:hover{
+    background-color: white;
+    color: var(--Bright-Blue);
+    transition: 100ms;
+}
+/*----------------Sec 02----------------------*/
+.sec_2{
+   /* background-image: url(./images/bg-curve-mobile.svg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-clip:padding-box; */
+    background-color: hsl(240, 75%, 98%);
+    text-align: center;
+    padding: 0 30px 0;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+}
+.illu_2 img{
+    width: 500px;
+    margin-bottom: 120px;
+}
+h2{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.sec_2 p{
+    text-align: start;
+    margin-bottom: 30px;
+}
+.arrow{
+    color: var(--Moderate-Cyan);
+    margin: 0 auto;
+    width: fit-content;
+    border-bottom: 2px var(--Moderate-Cyan) solid ;
+    padding-bottom: 7px;
+    margin-bottom: 60px;
+}
+.arrow img{
+    width: 25px;
+    transform: translateY(5px);
+}
+.arrow span{
+    font-size:20px;
+    margin-right: 10px;
+}
+.card{
+    padding: 30px 20px  30px 40px ;
+    text-align: start;
+    margin: 0 auto;
+    background-color:white;
+    box-shadow: 2px 5px 2px var(--Light-Gray);
+    width: 500px;
+    border-radius: 8px;
+}
+.card p{
+    opacity: 1;
+    font-size: 18px;
+}
+.card>img{
+    width: 20px;
+    margin-bottom: 10px;
+}
+.profile img{
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.profile{
+    display: flex;
+}
+.name{
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+}
+#nm{
+    font-size: 18px;
+    font-weight: 700;
+}
+/******************Sec 03 ********************/
+.sec_3{
+    text-align: center;
+    background-color: var(--Desaturated-Blue);
+    padding: 80px 60px 120px 60px;
+    color: white;
+}
+.sec_3 p{
+    color: white;
+    opacity: 1;
+    margin-bottom: 40px;
+}
+#sumb_2 input{
+    padding-left: 10px;
+    background-color: white;
+    opacity: 1;
+}
+/********************Footer ******************/
+ul{
+    list-style: none;
+}
+footer{
+    color: white;
+    background-color: var(--Very-Dark-Blue);
+    padding:100px 30px 50px 50px;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  font-size: 25px;
+  margin-bottom: 40px;
+}
+.num{
+    display: flex;
+}
+#phone{
+    width: 30px;
+    margin-right: 20px;
+    transform: translateY(4px);
+}
+.contact img{
+    opacity: 1;
+    filter:invert(100%);
+    width: 250px;
+    margin-bottom:40px;
+}
+.contact span{
+    margin-bottom: 20px;
+}
+#us{
+    margin-bottom: 60px;
+}
+li{
+    margin-bottom: 20px;
+}
+.social{
+    text-align: center;
+}
+.social img{
+    filter: invert(180%);
+    margin-left: 20px;
+}
+/************** Desktop ****************/
+@media  screen and (min-width:800px) {
+    
+    .sec_1{
+        display: flex;
+        text-align: start;
+    }
+    .illu_1{
+        order: 2;
+    }
+    .sumb{
+    display: flex;
+    flex-direction: row;
+    }
+    .sumb button{
+        margin-left: 20px;
+        align-self: flex-start;
+    }
+    
 }
